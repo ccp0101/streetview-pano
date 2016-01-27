@@ -1,7 +1,7 @@
 apt-get update
 apt-get install -y git python-pip python-dev python-gevent python-gunicorn python-pil libevent-dev
 
-pip install flask flask-cors grequests markupsafe pillow
+pip install flask flask-cors grequests markupsafe pillow gunicorn
 
 cd /tmp
 git clone https://github.com/ccp0101/streetview-pano.git
