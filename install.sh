@@ -15,4 +15,4 @@ if ! [[ $NUM_WORKERS =~ $re ]] ; then
    NUM_WORKERS=4
 fi
 
-gunicorn app:app --workers $NUM_WORKERS --bind 0.0.0.0:80 --access-logfile /tmp/access.log
+gunicorn app:app --workers $NUM_WORKERS --bind 0.0.0.0:80 --access-logfile /tmp/access.log 2>&1 1>/tmp/gunicorn.log
